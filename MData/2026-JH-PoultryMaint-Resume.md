@@ -11,8 +11,11 @@
 + Hardware and Industrial Cabinets: Not only capable of troubleshooting but repairing and prolonging electronic hardware. Ability to read harware and electrical shematics, isolate wiring and/or component failures, test voltage levels and potential damaging electrical-shorts to ground.
 + (HMI/PLC) - Familiar with sofware downloads and updates too Human Machine Interfaces, as well as, soft-skill knowledge with Programmable Logic Controls (Siemens, Allen-Bradley ..)
 + <ins>*Transferrable Skills*</ins>
-    * Computer Proficiency : &ensp; Type 40-wpm&ensp;+&ensp;Windows & Linux OS&ensp;+&ensp;MS Office 
-    * Programming Languages : &ensp; Java&ensp;+&ensp;C++&ensp;+&ensp;Python&ensp;+&ensp;Javascript/HTML/CSS&ensp;+&ensp;Siemens S5/7&ensp;+&ensp;(HMI) QT cross-platform development tooling.
+    * Computer Comptencies : &ensp; Type 40-wpm&ensp;+&ensp;Windows & Linux OS&ensp;+&ensp;MS Office Business Tools
+    * *Programming Languages* :  
+       * Business Applications : &nbsp; C++ &ensp; | &ensp; Java &ensp; | &ensp; Python
+       * Web Applications : &nbsp; Javascript/HTML/CSS &ensp;+&ensp; Nodejs  
+       * Industry Specific : &nbsp; Siemens S5/7&ensp;|&ensp;( HMI ) [QT Cross Platform](https://www.qt.io/)
     * Time Management&ensp;+&ensp;Problem Solving & Critical Thinking&ensp;+&ensp;Teamwork&ensp;+&ensp;Attention-To-Detail
 
 
