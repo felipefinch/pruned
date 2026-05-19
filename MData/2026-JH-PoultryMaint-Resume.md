@@ -2,18 +2,17 @@
 470-423-4087 &nbsp;&nbsp;|&nbsp;&nbsp; jhice2525@outlook.com &nbsp;&nbsp;|&nbsp;&nbsp; Gainesville, GA 30506
 
 ## Summary
-&ensp; Safety-conscious and reliable Forklift Operator with over 20+ years of experience in warehouse, production and industrial control facilities. Proven ability to operate sit-down, stand-up, and reach truck forklifts to move, load, and stack materials efficiently. Committed to maintaining a zero-accident record, accurate inventory control, and supporting team goals to meet production deadlines.
+&ensp; Safety-conscious and reliable maintenance technician with over 20+ years of related experience ensuring operational continuity and optimizing equipment uptime. By reacting to production emergencies and down-time, I effectively communicated with production supervisors and managers while prolonging equipment asset lifespans, preventing unecessary costs and mimimizing unplanned production distractions.
 
 ## Core Competencies  
 
-+ Gas & Electric Powered Trucks :  ( Class I-V Forklift Types )  
-&emsp;Sit/Stand CounterBalance&ensp;+&ensp;Reach/Order Pickers&ensp;+&ensp;Lull / Telehandlers&ensp;+&ensp;Pallet Jacks  
-+ Shipping/Receiving&ensp;+&ensp;Loading/Unloading&ensp;+&ensp;Material Handling & Picking  
-+ Inventory Accuracy&ensp;+&ensp;Order Cycle & Turnover  
-+ WMS&ensp;+&ensp;RF Scanners&ensp;+&ensp;FIFO Procedures  
-+ Safety Compliance & OSHA Standards  
++ Troubleshooting & Hands-On-the spot! abilities to identify failures, mechanical, electrical, pneumatic and hydraulic issues before they extend beyond repair.
++ Fine-Tuning! The ability to perform critical alignments, calibrations, inspections and adjust machinery which will prolong it's lifespan.
++ Hardware and Industrial Cabinets: Not only capable of troubleshooting but repairing and prolonging electronic hardware. Ability to read harware and electrical shematics, isolate wiring and/or component failures, test voltage levels and potential damaging electrical-shorts to ground.
++ (HMI/PLC) - Familiar with sofware downloads and updates too Human Machine Interfaces, as well as, soft-skill knowledge with Programmable Logic Controls (Siemens, Allen-Bradley ..)
 + <ins>*Transferrable Skills*</ins>
-    * Computer Proficiency : &ensp; Type 40-wpm&ensp;+&ensp;Windows & Linux OS&ensp;+&ensp;MS Office  
+    * Computer Proficiency : &ensp; Type 40-wpm&ensp;+&ensp;Windows & Linux OS&ensp;+&ensp;MS Office 
+    * Programming Languages : &ensp; Java&ensp;+&ensp;C++&ensp;+&ensp;Python&ensp;+&ensp;Javascript/HTML/CSS&ensp;+&ensp;Siemens S5/7&ensp;+&ensp;(HMI) QT cross-platform development tooling.
     * Time Management&ensp;+&ensp;Problem Solving & Critical Thinking&ensp;+&ensp;Teamwork&ensp;+&ensp;Attention-To-Detail
 
 
@@ -23,6 +22,10 @@
 + CPR Certified
 
 ## Experience
+
+2023 - 2025  &ensp;**Maintenance Technician**&ensp; | &ensp;*Fieldale Farms &ensp;|&ensp; Murrayville, GA*  
+> ( _1st Processing Evisceration Line(s)_ )  
+Responsible for all equipment repair, support and weekend preventive maintenance requirements. Daily duties included, moving product throughout the plant with electric pallet jack and also driving the outdoors Lull Truck for equipment handling and trash removal from facility.
 
 2014 - 2022  &ensp;**Application Specialist**&ensp; | &ensp;*IBA America, LLC &ensp;|&ensp; Cumming, GA*  
 > Help Desk & Technical Support role where I assisted Application Engineers with customer training, documentation and software installations. Pallet and forklift operations for moving shipping and receiving product.  
@@ -41,6 +44,8 @@
 
 ## Education
 
+2016  &emsp;&emsp;&emsp;&ensp; **Full-Stack Web Development**&ensp; | &ensp;*[DigitalCrafts](https://www.digitalcrafts.com/)* &ensp; | &ensp;*Atlanta, GA*  
+2005 - 2008  &ensp;**AA - Computer Programming**&ensp; | &ensp;*Gwinnett Tech &ensp;|&ensp; Gwinnett, GA*  
 1994 - 1996  &ensp;**AA - Electronics**&ensp; | &ensp;*DeVry &ensp;|&ensp; Decatur, GA* 
 
 ## Hobbies & Interest
