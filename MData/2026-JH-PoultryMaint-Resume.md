@@ -44,9 +44,9 @@ Responsible for all equipment repair, support and weekend preventive maintenance
 
 ## Education
 
-2016  &emsp;&emsp;&emsp;&ensp; **Full-Stack Web Development**&ensp; | &ensp;*[DigitalCrafts](https://www.digitalcrafts.com/)* &ensp; | &ensp;*Atlanta, GA*  
-2005 - 2008  &ensp;**AA - Computer Programming**&ensp; | &ensp;*Gwinnett Tech &ensp;|&ensp; Gwinnett, GA*  
-1994 - 1996  &ensp;**AA - Electronics**&ensp; | &ensp;*DeVry &ensp;|&ensp; Decatur, GA* 
+2016  &emsp;&emsp;&emsp;&ensp;&nbsp; **Full-Stack Web Development** &nbsp;&nbsp; | &ensp;&nbsp;&nbsp;*[DigitalCrafts](https://www.digitalcrafts.com/)*&emsp;&emsp;&nbsp; | &ensp;&nbsp; *Atlanta, GA*  
+2005 - 2008  &nbsp;&nbsp; **AA - Computer Programming** &ensp; | &ensp;&ensp;*Gwinnett Tech &nbsp;&ensp;&nbsp;&nbsp; | &ensp; Gwinnett, GA*  
+1994 - 1996  &ensp; **AA - Electronics** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | &ensp;&ensp;*DeVry &emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; | &ensp; Decatur, GA* 
 
 ## Hobbies & Interest
 + Landscaping & Gardening  
