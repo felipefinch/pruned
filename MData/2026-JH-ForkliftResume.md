@@ -36,12 +36,12 @@
 1996 - 2002  &ensp;**Warehouse Specialist**&ensp; | &ensp;*SIEMENS &ensp;|&ensp; Alpharetta, GA*  
 > Counter-Balance LP Forklift operations, where I handled equipment placement, loading & unloading equipment from carrier trucks, inventory counts and RF scanning for all products moving in and out of the building.
 
-1990 - 1994  &ensp;**Communications Operator ( Radioman )**&ensp; | &ensp;*U.S. NAVY &ensp;|&ensp; Mayport, FL*  
-> Communications operator aboard the U.S.S. Antrim FFG-20. I was responsible for transmitting, receiving, and processing all forms of telecommunications, including voice and data circuits between ships, aircraft, and shore stations.
+1990 - 1994  &ensp;**Communications Operator ( [Radioman](https://en.wikipedia.org/wiki/Radioman) )**&ensp; | &ensp;*U.S. NAVY &ensp;|&ensp; Mayport, FL*  
+> Communications Operator aboard the [U.S.S. Antrim FFG-20](https://en.wikipedia.org/wiki/USS_Antrim_(FFG-20)). I was responsible for transmitting, receiving, and processing all forms of telecommunications, including voice and data circuits between ships, aircraft, and shore stations.
 
 ## Education
 
-1994 - 1996  &ensp;**AA - Electronics**&ensp; | &ensp;*DeVry &ensp;|&ensp; Decatur, GA* 
+1994 - 1996  &ensp;**AA - Electronics**&ensp; | &ensp;*[DeVry](https://www.devry.edu/about/campus-locations/georgia/decatur.html) &ensp;|&ensp; Decatur, GA* 
 
 ## Hobbies & Interest
 + Landscaping & Gardening  

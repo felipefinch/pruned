@@ -39,17 +39,20 @@ Responsible for all equipment repair, support and weekend preventive maintenance
 1996 - 2002  &ensp;**Warehouse Specialist**&ensp; | &ensp;*SIEMENS &ensp;|&ensp; Alpharetta, GA*  
 > Counter-Balance LP Forklift operations, where I handled equipment placement, loading & unloading equipment from carrier trucks, inventory counts and RF scanning for all products moving in and out of the building.
 
-1990 - 1994  &ensp;**Communications Operator ( Radioman )**&ensp; | &ensp;*U.S. NAVY &ensp;|&ensp; Mayport, FL*  
-> Communications operator aboard the U.S.S. Antrim FFG-20. I was responsible for transmitting, receiving, and processing all forms of telecommunications, including voice and data circuits between ships, aircraft, and shore stations.
+1990 - 1994  &ensp;**Communications Operator ( [Radioman](https://en.wikipedia.org/wiki/Radioman) )**&ensp; | &ensp;*U.S. NAVY &ensp;|&ensp; Mayport, FL*  
+> Communications Operator aboard the [U.S.S. Antrim FFG-20](https://en.wikipedia.org/wiki/USS_Antrim_(FFG-20)). I was responsible for transmitting, receiving, and processing all forms of telecommunications, including voice and data circuits between ships, aircraft, and shore stations.
 
 ## Education
 
 2016  &emsp;&emsp;&emsp;&ensp;&nbsp; **Full-Stack Web Development** &nbsp;&nbsp; | &ensp;&nbsp;&nbsp;*[DigitalCrafts](https://www.digitalcrafts.com/)*&emsp;&emsp;&nbsp; | &ensp;&nbsp; *Atlanta, GA*  
-2005 - 2008  &nbsp;&nbsp; **AA - Computer Programming** &ensp; | &ensp;&ensp;*Gwinnett Tech &nbsp;&ensp;&nbsp;&nbsp; | &ensp; Gwinnett, GA*  
-1994 - 1996  &ensp; **AA - Electronics** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | &ensp;&ensp;*DeVry &emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; | &ensp; Decatur, GA* 
+2005 - 2008  &nbsp;&nbsp; **AA - Computer Programming** &ensp; | &ensp;&ensp;*[Gwinnett Tech](https://gwinnetttech.edu/) &nbsp;&ensp;&nbsp;&nbsp; | &ensp; Gwinnett, GA*  
+1994 - 1996  &ensp; **AA - Electronics** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | &ensp;&ensp;*[DeVry](https://www.devry.edu/about/campus-locations/georgia/decatur.html) &emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; | &ensp; Decatur, GA* 
 
 ## Hobbies & Interest
 + Landscaping & Gardening  
 + Wood Projects & Crafts  
 + Reading, Writing & Theological Studies  
-+ Web Programming (Front-End/Back-End Full-Stack Development)
++ Web Programming : [Front-End/Back-End Full-Stack Development)](https://www.udacity.com/topic/what-is-full-stack-development)
+
+## Web presence
++ [Github Profile](https://github.com/felipefinch)
