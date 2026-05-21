@@ -1,5 +1,7 @@
-# Joseph S. Hice
-470-423-4087 &nbsp;&nbsp;|&nbsp;&nbsp; jhice2525@outlook.com &nbsp;&nbsp;|&nbsp;&nbsp; Gainesville, GA 30506
+<div id="header" style="text-align:center">
+<h1> Joseph S. Hice </h1>
+<p>470-423-4087 &nbsp;&nbsp;|&nbsp;&nbsp; jhice2525@outlook.com &nbsp;&nbsp;|&nbsp;&nbsp; Gainesville, GA 30506<p>
+</div>
 
 ## Summary
 &ensp; Safety-conscious and reliable maintenance technician with over 20+ years of related experience ensuring operational continuity and optimizing equipment uptime. By reacting to production emergencies and down-time, I effectively communicated with production supervisors and managers while prolonging equipment asset lifespans, preventing unecessary costs and mimimizing unplanned production distractions.
