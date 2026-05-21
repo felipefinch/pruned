@@ -7,7 +7,8 @@
 ## Core Competencies  
 
 + Gas & Electric Powered Trucks :  ( Class I-V Forklift Types )  
-&emsp;Sit/Stand CounterBalance&ensp;+&ensp;Reach/Order Pickers&ensp;+&ensp;Lull / Telehandlers&ensp;+&ensp;Pallet Jacks  
+&emsp;Sit/Stand CounterBalance&ensp;+&ensp;Reach/Order Pickers&ensp;+&ensp;Lull / Telehandlers&ensp;+&ensp;Pallet Jacks 
++ Maintenance Related operations with Scissor-Lifts, Vertical Single-Man Lift and Forklift Assist Cages 
 + Shipping/Receiving&ensp;+&ensp;Loading/Unloading&ensp;+&ensp;Material Handling & Picking  
 + Inventory Accuracy&ensp;+&ensp;Order Cycle & Turnover  
 + WMS&ensp;+&ensp;RF Scanners&ensp;+&ensp;FIFO Procedures  
