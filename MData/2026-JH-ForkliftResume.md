@@ -1,5 +1,7 @@
-# Joseph S. Hice
-470-423-4087 &nbsp;&nbsp;|&nbsp;&nbsp; jhice2525@outlook.com &nbsp;&nbsp;|&nbsp;&nbsp; Gainesville, GA 30506
+<div id="header" style="text-align:center">
+<h1> Joseph S. Hice </h1>
+<p>470-423-4087 &nbsp;&nbsp;|&nbsp;&nbsp; jhice2525@outlook.com &nbsp;&nbsp;|&nbsp;&nbsp; Gainesville, GA 30506<p>
+</div>
 
 ## Summary
 &ensp; Safety-conscious and reliable Forklift Operator with over 20+ years of experience in warehouse, production and industrial control facilities. Proven ability to operate sit-down, stand-up, and reach truck forklifts to move, load, and stack materials efficiently. Committed to maintaining a zero-accident record, accurate inventory control, and supporting team goals to meet production deadlines.
