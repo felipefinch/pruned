@@ -2,61 +2,54 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRUNED</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/pruned/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/pruned/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/pruned/favicon/favicon-16x16.png">
-  <link rel="shortcut icon" type="image/x-icon" href="/pruned/favicon/favicon.ico">
-  <link rel="manifest" href="/pruned/favicon/site.webmanifest">
-  <link rel="stylesheet" href="/pruned/styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRUNED</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 
 <body>
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace.js"></script>
-  <script type="module"
-    src="https://ka-p.webawesome.com/kit/b9bfcf2dca544e85/webawesome@3.6.0/webawesome.loader.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="https://felipefinch.github.io/pruned/jscript/main.js"></script>
-
-  <div class="topnav" id="myTopnav">
-    <div class="logo-pill">
-      <img src="favicon/android-chrome-192x192.png" alt="Logo">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/js/jquery-4.0.0.min.js"></script>
+    <script src="/js/main.js"></script>
+    
+    <div class="topnav" id="myTopnav">
+        <div class="logo-pill">
+            <img src="/favicon/android-chrome-192x192.png" alt="Logo">
+        </div>
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <div class="dropdown">
+            <button class="dropbtn">Revision Data<i class="fa fa-caret-down" style="padding-left: 5px;"></i></button>
+            <div class="dropdown-content">
+                <a href="javascript:void(0)" onclick="getFileCommits('felipefinch', 'pruned', 'MData/')">MData Commit
+                    History</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveTopNav()">&#9776;</a>
     </div>
-    <a href="#home" class="active">Home</a>
-    <a href="#news">News</a>
-    <div class="dropdown">
-      <button class="dropbtn">Revision Data<i class="fa fa-caret-down" style="padding-left: 5px;"></i></button>
-      <div class="dropdown-content">
-        <a href="javascript:void(0)" onclick="getFileCommits('felipefinch', 'pruned', 'MData/')">MData Commit
-          History</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-      </div>
+    <div id="examples" style="padding:20px">
+        <div class="files" style="padding: 10px">
+            <h2>Generated HTML & PDF Files for Resume Example(s)</h2>
+            <ul id="file-list"></ul>
+        </div>
+        <div class="files" style="padding: 10px">
+            <h2 id="history-title"></h2>
+            <ul id="commit-list"></ul>
+        </div>
     </div>
-    <a href="#about">About</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-
-
-  <div id="examples" style="padding:20px">
-    <div class="files" style="padding: 10px">
-      <h2>Generated HTML & PDF Files for Resume Example(s)</h2>
-      <ul id="file-list"></ul>
-    </div>
-
-    <div class="files" style="padding: 10px">
-      <h2 id="history-title"></h2>
-      <ul id="commit-list"></ul>
-    </div>
-  </div>
 </body>
-</html>
 
+</html>
 <!-- <sl-dropdown>
     <sl-button slot="trigger" caret>Dropdown</sl-button>
     <sl-menu>
