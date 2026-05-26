@@ -1,11 +1,19 @@
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy Static Site!
 
+# on:
+#   workflow_run:
+#     workflows: [ "Generate Documents" ] # Run convert.yml file first then do this one...branches: 
+#     types:
+#       - completed
+
 on:
-  workflow_run:
-    workflows: [ "Generate Documents" ] # Run convert.yml file first then do this one...branches: 
-    types:
-      - completed
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+  
+    # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
