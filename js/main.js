@@ -4,15 +4,19 @@ const owner = 'felipefinch';
 const repo = 'pruned';
 const resumes_PATH = 'MData/';
 
+// Select the anchor element using its ID
+const link = document.getElementById("commitHistory");
+const commitLine = document.getElementById("htLine");
 
-function responsiveTopNav() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+// Attach the click event listener
+link.addEventListener("click", function(event) {
+  // Prevent the default browser redirection
+  event.preventDefault();
+  
+  // Your custom logic runs here
+  console.log("Commit History Link Was Clicked!");
+  getFileCommits(`${owner}`, `${repo}`, `${resumes_PATH}`);
+});
 
 
 function grabMDFile(nameOfFile) {

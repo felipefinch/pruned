@@ -12,31 +12,20 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <div class="topnav" id="myTopnav">
-        <div class="logo-pill">
-            <img src="./favicon/favicon-32x32.png" alt="Logo">
-        </div>
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <div class="dropdown">
-            <button class="dropbtn">Revision Data<i class="fa fa-caret-down" style="padding-left: 5px;"></i></button>
-            <div class="dropdown-content">
-                <a href="javascript:void(0)" onclick="getFileCommits('felipefinch', 'pruned', 'MData/')">MData Commit
-                    History</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="responsiveTopNav()">&#9776;</a>
-    </div>
-    <div id="examples" style="padding:20px">
-        <div class="files" style="padding: 10px">
-            <h2>Generated HTML & PDF Files for Resume Example(s)</h2>
+    <ul class="navigation">
+        <li id="commitHistory" class="nav-item"><a href="#">Commit History</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+    </ul>
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger"></label>
+    <div class="site-wrap">
+        <div class="aFiles">
+            <h2>Generated HTML & PDF Files for Resume Example(s)</h2><hr>
             <ul id="file-list"></ul>
         </div>
-        <div class="files" style="padding: 10px">
-            <h2 id="history-title"></h2>
+        <div class="aCommit">
+            <h2 id="history-title"></h2><hr id="htLine">
             <ul id="commit-list"></ul>
         </div>
     </div>
