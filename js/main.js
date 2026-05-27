@@ -15,7 +15,6 @@ function responsiveTopNav() {
 }
 
 
-
 function grabMDFile(nameOfFile) {
   console.log("What is name of MD file? " + nameOfFile);
 
