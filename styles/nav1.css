@@ -10,6 +10,7 @@
     left: 0;
     z-index: 0;
     padding-top: 10px;
+    padding-left: 0;
 
     /* non-critical appearance styles */
     list-style: none;
@@ -124,7 +125,6 @@ code {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 html,
