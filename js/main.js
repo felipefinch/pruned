@@ -4,17 +4,84 @@ const repo = 'pruned';
 const resumes_PATH = 'MData/';
 
 // Select the anchor element using its ID
-const link = document.getElementById("commitHistory");
-const commitLine = document.getElementById("htLine");
+// const _commitHistory = document.getElementById("commitHistory");
+
 
 // Attach the click event listener
-link.addEventListener("click", function(event) {
-    // Prevent the default browser redirection
-    event.preventDefault();
+// _commitHistory.addEventListener("click", function(event) {
+//     // Prevent the default browser redirection
+//     event.preventDefault();
 
-    // Your custom logic runs here
-    getFileCommits(`${owner}`, `${repo}`, `${resumes_PATH}`);
+//     // Your custom logic runs here
+//     getFileCommits(`${owner}`, `${repo}`, `${resumes_PATH}`);
+// });
+
+// Mousedown (vs Click's) handling for Hamburger and Menu Slideout calls.
+addEventListener('mousedown', (event) => {
+    event.preventDefault();
+    slideNavigator();
 });
+
+
+// Hamburger & Slide-Out Functionality
+// ==============================================================
+slideNavigator = () => {
+
+    const _eID = event.target.id;
+    const _etarget = event.target.classList;
+
+    const _hamburger_menu = document.querySelector(".hamburger-menu");
+    const _slider = document.querySelector(".sliding-navbar");
+    const _mask = document.querySelector(".mask");
+    const _hamburger = document.querySelector(".hamburger");
+    const _commits = document.getElementById('#commit-history');
+
+    const _burgerArea = _etarget.contains("hamburger") || _etarget.contains("hamburger-menu");
+    const _maskTarget = event.target.classList.contains("mask");
+
+    // console.log("MouseDown Event : " + event.target.className + " and ID name: " + event.target.id);
+
+    if (_burgerArea) {
+        _slider.classList.toggle('sliding-navbar--open');
+        _mask.classList.toggle('show');
+        _hamburger.classList.toggle('menu-opened');
+    }
+
+    if (_maskTarget) {
+        _slider.classList.toggle('sliding-navbar--open');
+        _mask.classList.remove('show');
+        _hamburger.classList.toggle('menu-opened');
+    }
+
+    console.log("ID is: " + _eID);
+
+    if (_eID === "commit-history") {
+        navigatorMenu();
+    }
+
+    navigatorMenu = () => {
+        console.log("Is there an ID? " + _eID);
+    }
+
+
+}
+
+
+
+// JQUERY FUNCTIONALITY =============================================
+// $(function(){
+//     $('.hamburger-menu').click(function(){
+//         $('.sliding-navbar').toggleClass('sliding-navbar--open');
+//         $('.mask').toggleClass('show')
+//         $('.hamburger').toggleClass('menu-opened');
+//     });
+
+//     $('.mask').click(function(){
+//         $('.sliding-navbar').toggleClass('sliding-navbar--open');
+//         $('.mask').removeClass('show');
+//         $('.hamburger').toggleClass('menu-opened');
+//     })
+// });
 
 
 function grabMDFile(nameOfFile) {
@@ -36,8 +103,8 @@ function grabMDFile(nameOfFile) {
     return null;
 }
 
-async function getFileCommits(owner, repo, filePath) {
-    const url = `https://api.github.com/repos/${owner}/${repo}/commits?path=${encodeURIComponent(filePath)}`;
+async function getRawJson(_owner, _repo, _filepath) {
+    const url = `https://api.github.com/repos/${_owner}/${_repo}/commits?path=${encodeURIComponent(_filepath)}`;
 
     try {
         const response = await fetch(url, {
@@ -54,12 +121,14 @@ async function getFileCommits(owner, repo, filePath) {
         const listContainer = document.getElementById('commit-list');
         const headContainer = document.getElementById('history-title');
 
+        console.log(commits);
+
         // Clear-out innerHTML & Elements for each iteration
         listContainer.replaceChildren();
         headContainer.replaceChildren();
 
         // Append the commit history main title
-        headContainer.append(`Commit History for : ../${filePath} folder!`);
+        headContainer.append(`Commit History for : ../${_filepath} folder!`);
 
         commits.forEach(commit => {
             // Raw Output for commit messages: title & subjects
@@ -88,6 +157,72 @@ async function getFileCommits(owner, repo, filePath) {
                 parentli.appendChild(sub_ul);
                 sub_li.textContent = _content;
                 sub_ul.appendChild(sub_li);
+
+                parseCommitContent(_content);
+            }
+        });
+
+    } catch (error) {
+        console.error("Failed to fetch commits:", error);
+    }
+}
+
+async function getFileCommits(_owner, _repo, _filepath) {
+    const url = `https://api.github.com/repos/${_owner}/${_repo}/commits?path=${encodeURIComponent(_filepath)}`;
+
+    try {
+        const response = await fetch(url, {
+            headers: {
+                'Accept': 'application/vnd.github+json',
+                //'Authorization': `Bearer ${token}`, // Remove if not using a token
+                'X-GitHub-Api-Version': '2022-11-28'
+            }
+        });
+
+        if (!response.ok) throw new Error(`Error: ${response.status}`);
+
+        const commits = await response.json();
+        const listContainer = document.getElementById('commit-list');
+        const headContainer = document.getElementById('history-title');
+
+        console.log(commits);
+
+        // Clear-out innerHTML & Elements for each iteration
+        listContainer.replaceChildren();
+        headContainer.replaceChildren();
+
+        // Append the commit history main title
+        headContainer.append(`Commit History for : ../${_filepath} folder!`);
+
+        commits.forEach(commit => {
+            // Raw Output for commit messages: title & subjects
+            // console.log(`${commit.sha.substring(0, 7)}: ${commit.commit.message} (${commit.commit.author.date})`);
+
+            const _full_message = parseCommitSubject(`${commit.commit.message}`);
+            const _subject = _full_message.title;
+            const _content = _full_message.content;
+            const parentli = document.createElement('li');
+
+            parentli.textContent = _subject // Assuming data has a 'name' property
+            listContainer.appendChild(parentli);
+
+            if (_content) {
+                const sub_ul = document.createElement('ul');
+                const sub_li = document.createElement('li');
+                // const _multiContent = parseCommitContent(_content);
+
+                // for (var i = 0; i < _multiContent.length; i++) {
+
+                //     console.log("Multi-Content: " + _multiContent[i]);
+                //     parentli.appendChild(sub_ul);
+                //     sub_li.textContent = _multiContent[i];
+                //     sub_ul.appendChild(sub_li);
+                // }
+                parentli.appendChild(sub_ul);
+                sub_li.textContent = _content;
+                sub_ul.appendChild(sub_li);
+
+                parseCommitContent(_content);
             }
         });
 
@@ -99,19 +234,24 @@ async function getFileCommits(owner, repo, filePath) {
 // BROKEN AT THE MOMENT!
 function parseCommitContent(_contentMessage) {
     const myString = _contentMessage;
-    const _result = "";
+    let _result = "";
 
     if (myString.startsWith("-")) {
         // Split into an array, removing the leading empty entry if desired
-        _result = myString.split("-").filter(part => part !== "");
+        _result = myString.split("- ").filter(part => part !== "");
+        console.log(_result);
 
         for (var i = 0; i < _result.length; i++) {
+
+            // Remove any carriage-returns \n
             _result[i].replace(/\r?\n$/, ""); // ["data", "value"]
+            console.log(_result[i]);
         }
 
-    } else { _result = _contentMessage; }
-
-    return _result;
+        if (_result.length <= 1) {
+            console.log("Result is only one string value");
+        }
+    }
 }
 
 function parseCommitSubject(commitMessage) {
@@ -152,7 +292,7 @@ async function listGitHubFiles() {
 }
 
 // Call and list files on page load.
-listGitHubFiles();
+// listGitHubFiles();
 
 // Example usage:
 // const commit = "fix(auth): resolve login redirect issue\n\nUsers were being redirected to the homepage instead of the requested dashboard. Updated the redirect logic in the auth controller.";
