@@ -49,7 +49,7 @@ const slideNavigator = () => {
 
     const _eID = event.target.id;
     const _etarget = event.target.classList;
-    const _main = document.getElementById("main-content");
+    const _main = document.getElementById("maincontent");
 
     const _hamburger_menu = document.querySelector(".hamburger-menu");
     const _slider = document.querySelector(".sliding-navbar");
@@ -85,7 +85,7 @@ const slideNavigator = () => {
             title: "Resume Version List"
         });
         // 3. Render into the DOM
-        _main.innerHTML = await renderedHtml;
+        _main.innerHTML = renderedHtml;
         const _html = await listGithubFolder('afiles');
         document.getElementById("resumes").querySelector('hr').insertAdjacentHTML("afterend", _html);
 

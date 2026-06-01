@@ -1,21 +1,27 @@
 @import url("nav1.css");
 
+@font-face {
+    font-family: 'PrunedMicro';
+    src: url('fonts/Michroma-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PrunedSyne';
+    src: url('fonts/SyneMono-Regular.ttf') format('truetype');
+}
+
 body {
     margin: 0;
-    font-family: Arial
+    font-family: PrunedMicro, PrunedSyne, Verdana, sans-serif;
 }
 
 hr {
-  border: none;               /* Clear default browser styles */
-  height: 1px;                /* Define thickness */
-  background-color: #d19f0e;     /* Define line color */
-  margin: 5px;
+    border: none;
+    height: 1px;
+    background-color: #d19f0e;
+    margin: 5px;
 }
 
-.aFiles {
-    ul { font-size: 18px; line-height: 25px }
-    h2 { color: #403000; font-size: 20px }
-}
 
 .aCommit {
     margin-top: 20px;

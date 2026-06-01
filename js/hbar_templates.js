@@ -2,7 +2,7 @@
 export const HBar = {
     userProfile: `
     <div class="profile">
-      <h2>{{name}}</h2>
+      <h2>{{user.firstName}}</h2>
       <p>{{role}}</p>
     </div>
   `,
