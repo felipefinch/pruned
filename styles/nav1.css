@@ -132,7 +132,6 @@
     background-blend-mode: lighten;
     background-position: 10% 10%;
     background-repeat: no-repeat;
-
 }
 
 .desc {
@@ -146,4 +145,30 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+}
+
+/* TEMPLATE(s) Styling
+************************************************************/
+
+.profile {
+    text-align: center;
+    padding-top: 25%;
+}
+
+.resumes {
+    ul {
+        list-style-type: none;
+        text-align: left;
+
+        li a {
+            color: lightyellow;
+            /* Removes default blue color and matches surrounding text */
+            text-decoration: none;
+            /* Removes the underline */
+        }
+        a:hover { color: #bac758; }
+    }
+
+    line-height: 25px;
 }

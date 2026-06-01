@@ -1,3 +1,6 @@
+import { HBar } from './hbar_templates.js';
+import { listGithubFolder } from './githubapi.js';
+
 // Common credentials for Github API Access! - Tokens are set to expire after one-day
 const owner = 'felipefinch';
 const repo = 'pruned';
@@ -5,7 +8,6 @@ const resumes_PATH = 'MData/';
 
 // Select the anchor element using its ID
 // const _commitHistory = document.getElementById("commitHistory");
-
 
 // Attach the click event listener
 // _commitHistory.addEventListener("click", function(event) {
@@ -16,19 +18,38 @@ const resumes_PATH = 'MData/';
 //     getFileCommits(`${owner}`, `${repo}`, `${resumes_PATH}`);
 // });
 
-// Mousedown (vs Click's) handling for Hamburger and Menu Slideout calls.
+// Mousedown (vs Click's)
 addEventListener('mousedown', (event) => {
     event.preventDefault();
     slideNavigator();
 });
 
+// MouseUP (vs Click's)
+addEventListener('mouseup', (event) => {
+    event.preventDefault();
+    const _eID = event.target.id;
+
+    if (_eID === "commit-history") {
+        document.querySelector(".sliding-navbar").classList.toggle('sliding-navbar--open');
+        document.querySelector(".mask").classList.remove('show');
+        document.querySelector(".hamburger").classList.toggle('menu-opened');
+    }
+});
+
+// compile the template
+// const _main = document.getElementById("main-content");
+// const template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
+
+// // execute the compiled template and print the output to the console
+// console.log(template({ doesWhat: "rocks!" }));
 
 // Hamburger & Slide-Out Functionality
 // ==============================================================
-slideNavigator = () => {
+const slideNavigator = () => {
 
     const _eID = event.target.id;
     const _etarget = event.target.classList;
+    const _main = document.getElementById("main-content");
 
     const _hamburger_menu = document.querySelector(".hamburger-menu");
     const _slider = document.querySelector(".sliding-navbar");
@@ -38,8 +59,6 @@ slideNavigator = () => {
 
     const _burgerArea = _etarget.contains("hamburger") || _etarget.contains("hamburger-menu");
     const _maskTarget = event.target.classList.contains("mask");
-
-    // console.log("MouseDown Event : " + event.target.className + " and ID name: " + event.target.id);
 
     if (_burgerArea) {
         _slider.classList.toggle('sliding-navbar--open');
@@ -53,36 +72,26 @@ slideNavigator = () => {
         _hamburger.classList.toggle('menu-opened');
     }
 
-    console.log("ID is: " + _eID);
+    if (_eID === "commit-history") commitHistory(_eID);
 
-    if (_eID === "commit-history") {
-        navigatorMenu();
+    async function commitHistory(_id) {
+        console.log("Is there an ID? " + _id);
+
+        // 1. Compile the template string into a functional engine
+        const profileCompiled = Handlebars.compile(HBar.resumeList);
+
+        // 2. Inject context data to generate the HTML string
+        const renderedHtml = profileCompiled({
+            title: "Resume Version List"
+        });
+        // 3. Render into the DOM
+        _main.innerHTML = await renderedHtml;
+        const _html = await listGithubFolder('afiles');
+        document.getElementById("resumes").querySelector('hr').insertAdjacentHTML("afterend", _html);
+
     }
-
-    navigatorMenu = () => {
-        console.log("Is there an ID? " + _eID);
-    }
-
 
 }
-
-
-
-// JQUERY FUNCTIONALITY =============================================
-// $(function(){
-//     $('.hamburger-menu').click(function(){
-//         $('.sliding-navbar').toggleClass('sliding-navbar--open');
-//         $('.mask').toggleClass('show')
-//         $('.hamburger').toggleClass('menu-opened');
-//     });
-
-//     $('.mask').click(function(){
-//         $('.sliding-navbar').toggleClass('sliding-navbar--open');
-//         $('.mask').removeClass('show');
-//         $('.hamburger').toggleClass('menu-opened');
-//     })
-// });
-
 
 function grabMDFile(nameOfFile) {
     console.log("What is name of MD file? " + nameOfFile);
@@ -264,33 +273,6 @@ function parseCommitSubject(commitMessage) {
     };
 }
 
-
-async function listGitHubFiles() {
-    const url = `https://api.github.com/repositories/1230097187/contents/afiles`;
-
-    try {
-        const response = await fetch(url);
-        const files = await response.json();
-        const listElement = document.getElementById('file-list');
-
-        files.forEach(file => {
-            // Create a list item and link for each file
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-
-            // Use 'download_url' for raw file access or 'html_url' for the GitHub UI
-            a.href = file.download_url.split('/').slice(-2).join('/');
-            console.log(a.href);
-            a.textContent = file.name;
-
-            li.appendChild(a);
-            listElement.appendChild(li);
-        });
-    } catch (error) {
-        console.error('Error fetching files:', error);
-    }
-}
-
 // Call and list files on page load.
 // listGitHubFiles();
 
@@ -331,7 +313,6 @@ async function listGitHubFiles() {
 //     console.error('Error fetching files:', error);
 //   }
 // }
-
 
 // function listMDFiles() {
 //     (async function () {

@@ -13,6 +13,9 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="./js/jquery-4.0.0.min.js"></script>
+    <!-- Include Handlebars from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
     <div class="hamburger-menu">
         <div class="hamburger"></div>
     </div>
@@ -25,11 +28,7 @@
     </navbar>
     <div class="mask"></div>
     <section class="main-content">
-        <div class="content-wrapper">
-            <div class="desc">
-                <h2>Generated HTML & PDF Files for Resume Example(s)</h2>
-                <ul id="file-list"></ul>
-            </div>
+        <div id="main-content" class="content-wrapper">
         </div>
     </section>
     <!--     <ul class="navigation">
@@ -51,7 +50,7 @@
             <ul id="commit-list"></ul>
         </div>
     </div> -->
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
