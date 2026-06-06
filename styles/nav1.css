@@ -45,19 +45,18 @@
 .navbar--items {
     list-style-type: none;
     position: absolute;
-    left: 25%;
+    left: 30%;
     top: 10%;
     transform: translate(-50%, -50%);
 }
 
 .navbar--item {
-
-
     color: white;
 }
 
 .navbar--item:hover {
     color: #bf9f40;
+    font-size: 17px;
     cursor: pointer;
 }
 
@@ -172,8 +171,8 @@
 /* Adds an icon before the link text */
 .icon-link::before {
     content: "";
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background-size: contain;
     background-repeat: no-repeat;
     filter: invert(1);
@@ -181,8 +180,11 @@
 }
 
 .history::before {
-    background-image: url('./imgs/merge-git.png');
+    background-image: url('./imgs/git-commit-256.png');
 }
 .json::before {
-    background-image: url('./imgs/merge-git.png');
+    background-image: url('./imgs/git-merge-256.png');
+}
+.branch::before {
+    background-image: url('./imgs/git-branch-256.png');
 }

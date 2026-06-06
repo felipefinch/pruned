@@ -6,17 +6,6 @@ const owner = 'felipefinch';
 const repo = 'pruned';
 const resumes_PATH = 'MData/';
 
-// Select the anchor element using its ID
-// const _commitHistory = document.getElementById("commitHistory");
-
-// Attach the click event listener
-// _commitHistory.addEventListener("click", function(event) {
-//     // Prevent the default browser redirection
-//     event.preventDefault();
-
-//     // Your custom logic runs here
-//     getFileCommits(`${owner}`, `${repo}`, `${resumes_PATH}`);
-// });
 
 // Mousedown (vs Click's)
 addEventListener('mousedown', (event) => {
@@ -36,12 +25,6 @@ addEventListener('mouseup', (event) => {
     }
 });
 
-// compile the template
-// const _main = document.getElementById("main-content");
-// const template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
-
-// // execute the compiled template and print the output to the console
-// console.log(template({ doesWhat: "rocks!" }));
 
 // Hamburger & Slide-Out Functionality
 // ==============================================================
