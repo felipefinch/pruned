@@ -1,0 +1,533 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"_F",
+				"_filePath"
+			],
+			[
+				"_loc",
+				"_localFilePath"
+			],
+			[
+				"_sett",
+				"_settingsFile"
+			],
+			[
+				"_se",
+				"_settingsFile"
+			],
+			[
+				"get",
+				"getNestedJSON"
+			],
+			[
+				"subl",
+				"sublimeNodePath"
+			],
+			[
+				"sub",
+				"sublimeMergeSettings"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"in",
+				"indigo"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"list",
+				"listGithubFolder"
+			],
+			[
+				"insert",
+				"insertAdjacentHTML"
+			],
+			[
+				"app",
+				"appendChild"
+			],
+			[
+				"_e",
+				"_eID"
+			],
+			[
+				"sli",
+				"slideNavigator"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"cl",
+				"className"
+			],
+			[
+				"ham",
+				"hamburger-menu"
+			],
+			[
+				"cla",
+				"classList"
+			],
+			[
+				"getE",
+				"getElementsByClassName"
+			],
+			[
+				"_con",
+				"_contentMessage"
+			],
+			[
+				"parse",
+				"parseCommitContent"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"favicon",
+				"favicon-32x32"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Nodejs/Nodejs.sublime-build",
+					""
+				],
+				[
+					"Packages/User/NodeJS.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Nodejs/Nodejs.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"mini",
+				"Minify::User File Settings"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"ter",
+				"Terminus: List Shells"
+			],
+			[
+				"term",
+				"Terminus: List Shells"
+			],
+			[
+				"termin",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"noe",
+				"Build With: NodeJS_sa"
+			],
+			[
+				"prefer",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package reso",
+				"Package Control: Advanced Remove Packages"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"settings",
+				"Preferences: Package Control Settings"
+			],
+			[
+				"prefe",
+				"Preferences: Settings"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"nodejs",
+				"Nodejs::User File Settings"
+			],
+			[
+				"pref",
+				"Preferences: Settings – Syntax Specific"
+			],
+			[
+				"node",
+				"npm: Check for outdated packages"
+			],
+			[
+				"uninsta",
+				"npm: Remove/Uninstall Package"
+			],
+			[
+				"prefereces: package control settings",
+				"Preferences: Package Control Settings"
+			],
+			[
+				"preferences: pa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"npm",
+				"npm: List Installed Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"live",
+				"Live Server Plus: Settings"
+			],
+			[
+				"install pak",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 264.0,
+		"history":
+		[
+			"view.run_command(\"set_system_username\")",
+			"clear",
+			"cls",
+			"npm install json5",
+			"pip install json5",
+			"pip install commentjson",
+			"view.run_command(\"set_system_username\")",
+			"view.run_command(\"username\")",
+			"view.run_command(\"example\")",
+			"Plugin: example",
+			"Plugin: hello_world",
+			"view.run_command(\"example\")",
+			"view.run(\"example\")",
+			"run",
+			"Plugin: hello_world",
+			"exit",
+			"clear",
+			"cls",
+			"Plugin: hello_world",
+			"view.run_command(\"HelloWorld\")",
+			"view.run_command('userName')",
+			"userName",
+			"get_username",
+			"node -v",
+			"dir",
+			"exit",
+			"cls",
+			"clear",
+			"dir",
+			"ls",
+			"exit",
+			"cls",
+			"clear",
+			"ls",
+			"npm"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/oakwoodkiosk8/Desktop/sublime_site/projects/pruned"
+	],
+	"file_history":
+	[
+		"/C/Users/oakwoodkiosk8/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/projects/pruned/index.html",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/set_system_user.py",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/HTML-CSS-JS Prettify/HTMLPrettify(settings).BCKUP",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/HTML-CSS-JS Prettify/HTMLPrettify.BCKUP",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/HTMLPrettify.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/.jsbeautifyrc",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/projects/pruned/js/githubapi.js",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/projects/pruned/js/hbar_templates.js",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/projects/pruned/styles/main.css",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/projects/pruned/styles/nav1.css",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/projects/pruned/index.html",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/projects/pruned/js/main.js",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/projects/pruned/styles/fonts/OFL.txt",
+		"/C/Users/cc-gai-res/Downloads/Michroma/OFL.txt",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/projects/pruned/templates.html",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/.jsbeautifyrc",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/HTMLPrettify.sublime-settings",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/set_system_user.py",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/get_username.py",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/hello.sublime-snippet",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/LiveServerPlus.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/hello_world.py",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/LiveServerPlus.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/projects/pruned/js/main.js",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/Minify.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/Minify/Minify.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/projects/pruned/favicon/site.webmanifest",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/HTML-CSS-JS Prettify/Default (Windows).sublime-keymap",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/projects/pruned/favicon/site.webmanifest",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/projects/pruned/jscript/main.js",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/projects/pruned/.github/workflows/convert.yml",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/projects/pruned/.github/workflows/static.yml",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/projects/pruned/MData/JH-LivingResume.md",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/node-v24.16.0-win-x64/README.md",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/Nodejs.sublime-settings",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/NodeJS_sa.sublime-build",
+		"/C/Users/cc-gai-res/Desktop/sublime_site/site/pruned/favicon/site.webmanifest",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/site/pruned/index.html",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/site/pruned/styles/main.css",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/site/pruned/jscript/main.js",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/site/pruned/afiles/2026-JH-ForkliftResume.html",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/site/profile2/index.html",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/site/profile2/w3.css",
+		"/C/Users/CC-GAI-RES.CORP/Downloads/sublime_text_build_4200_x64/Data/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/site/profile2/fonts.googleapis.com/css.css",
+		"/C/Users/CC-GAI-RES.CORP/Downloads/sublime_text_build_4200_x64/Data/Packages/User/NodeJS_sa.sublime-build",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/site/profile2/test.js",
+		"/C/Users/CC-GAI-RES.CORP/Downloads/sublime_text_build_4200_x64/Data/Packages/User/LNode.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Downloads/sublime_text_build_4200_x64/Data/Packages/User/Nodejs.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Downloads/sublime_text_build_4200_x64/Data/Packages/Nodejs/Nodejs.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Downloads/sublime_text_build_4200_x64/Data/Packages/User/npm.sublime-settings",
+		"/C/Users/CC-GAI-RES.CORP/Downloads/sublime_text_build_4200_x64/Data/Packages/User/NodeJS.sublime-build",
+		"/C/Users/CC-GAI-RES.CORP/Desktop/site/profile2/cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+		"/C/Users/CC-GAI-RES.CORP/Downloads/sublime_text_build_4200_x64/Data/Packages/User/LiveServerPlus.sublime-settings"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 48.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.Terminus":
+	{
+		"height": 142.0,
+		"history":
+		[
+		]
+	},
+	"output.exec":
+	{
+		"height": 156.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.nodejs":
+	{
+		"height": 437.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "Packages/User/NodeJS_sa.sublime-build",
+	"project": "pruned.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 323.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 200.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
