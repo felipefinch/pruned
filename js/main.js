@@ -67,6 +67,7 @@ const slideNavigator = () => {
         const renderedHtml = profileCompiled({
             title: "Resume Version List"
         });
+        
         // 3. Render into the DOM
         _main.innerHTML = renderedHtml;
         const _html = await listGithubFolder('afiles');
@@ -223,7 +224,7 @@ async function getFileCommits(_owner, _repo, _filepath) {
     }
 }
 
-// BROKEN AT THE MOMENT!
+
 function parseCommitContent(_contentMessage) {
     const myString = _contentMessage;
     let _result = "";
