@@ -1,16 +1,45 @@
-import { HBar } from './hbar_templates.js';
-import { listGithubFolder } from './githubapi.js';
+import {
+    CTemplates,
+    NavSlideOut
+} from './component_construct.js';
 
 // Common credentials for Github API Access! - Tokens are set to expire after one-day
 const owner = 'felipefinch';
 const repo = 'pruned';
 const resumes_PATH = 'MData/';
 
+// 1. Compile the template string into a functional engine
+// const profileCompiled = Handlebars.compile(CTemplates.sideNavSlideOut);
+
+// // 2. Inject context data to generate the HTML string
+// const renderedHtml = profileCompiled({
+//     navItem: [{
+//             navbar_li_id: "resume-id",
+//             navbar_li_class: "resume-cls",
+//             navbar_link_title: "Resume List"
+//         },
+//         {
+//             navbar_li_id: "commit-id",
+//             navbar_li_class: "commit-cls",
+//             navbar_link_title: "Commit History"
+//         },
+//         {
+//             navbar_li_id: "raw-id",
+//             navbar_li_class: "raw-class",
+//             navbar_link_title: "RAW JSON"
+//         }
+//     ]
+// });
+
+// 3. Render into the DOM
+// _main.innerHTML = renderedHtml;
+// const _html = await listGithubFolder('afiles');
+// document.getElementById("resumes").querySelector('hr').insertAdjacentHTML("afterend", _html);
 
 // Mousedown (vs Click's)
 addEventListener('mousedown', (event) => {
     event.preventDefault();
-    slideNavigator();
+    NavSlideOut();
 });
 
 // MouseUP (vs Click's)
@@ -24,58 +53,6 @@ addEventListener('mouseup', (event) => {
         document.querySelector(".hamburger").classList.toggle('menu-opened');
     }
 });
-
-
-// Hamburger & Slide-Out Functionality
-// ==============================================================
-const slideNavigator = () => {
-
-    const _eID = event.target.id;
-    const _etarget = event.target.classList;
-    const _main = document.getElementById("maincontent");
-
-    const _hamburger_menu = document.querySelector(".hamburger-menu");
-    const _slider = document.querySelector(".sliding-navbar");
-    const _mask = document.querySelector(".mask");
-    const _hamburger = document.querySelector(".hamburger");
-    const _commits = document.getElementById('#commit-history');
-
-    const _burgerArea = _etarget.contains("hamburger") || _etarget.contains("hamburger-menu");
-    const _maskTarget = event.target.classList.contains("mask");
-
-    if (_burgerArea) {
-        _slider.classList.toggle('sliding-navbar--open');
-        _mask.classList.toggle('show');
-        _hamburger.classList.toggle('menu-opened');
-    }
-
-    if (_maskTarget) {
-        _slider.classList.toggle('sliding-navbar--open');
-        _mask.classList.remove('show');
-        _hamburger.classList.toggle('menu-opened');
-    }
-
-    if (_eID === "commit-history") commitHistory(_eID);
-
-    async function commitHistory(_id) {
-        console.log("Is there an ID? " + _id);
-
-        // 1. Compile the template string into a functional engine
-        const profileCompiled = Handlebars.compile(HBar.resumeList);
-
-        // 2. Inject context data to generate the HTML string
-        const renderedHtml = profileCompiled({
-            title: "Resume Version List"
-        });
-        
-        // 3. Render into the DOM
-        _main.innerHTML = renderedHtml;
-        const _html = await listGithubFolder('afiles');
-        document.getElementById("resumes").querySelector('hr').insertAdjacentHTML("afterend", _html);
-
-    }
-
-}
 
 function grabMDFile(nameOfFile) {
     console.log("What is name of MD file? " + nameOfFile);
@@ -223,7 +200,6 @@ async function getFileCommits(_owner, _repo, _filepath) {
         console.error("Failed to fetch commits:", error);
     }
 }
-
 
 function parseCommitContent(_contentMessage) {
     const myString = _contentMessage;

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ba",
+				"background-image"
+			],
+			[
 				"_F",
 				"_filePath"
 			],
@@ -111,6 +115,17 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 12013,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -311,10 +326,17 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/oakwoodkiosk8/Desktop/sublime_site/projects/pruned"
+		"/C/Users/oakwoodkiosk12/Desktop/sublime_site/projects/pruned",
+		"/C/Users/oakwoodkiosk12/Desktop/sublime_site/projects/pruned/js",
+		"/C/Users/oakwoodkiosk12/Desktop/sublime_site/projects/pruned/styles"
 	],
 	"file_history":
 	[
+		"/C/Users/oakwoodkiosk8/Desktop/sublime_site/projects/pruned/styles/nav1.css",
+		"/C/Users/oakwoodkiosk8/Desktop/sublime_site/projects/pruned/js/main.js",
+		"/C/Users/oakwoodkiosk8/Desktop/sublime_site/projects/pruned/index.html",
+		"/C/Users/oakwoodkiosk8/Desktop/sublime_site/projects/pruned/js/hbar_templates.js",
+		"/C/Users/oakwoodkiosk8/Desktop/sublime_site/projects/pruned/pruned.sublime-project",
 		"/C/Users/oakwoodkiosk8/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/projects/pruned/index.html",
 		"/C/Users/CC-GAI-RES.CORP/Desktop/sublime_site/sublime_text_build_4200_x64/Data/Packages/User/set_system_user.py",
@@ -393,6 +415,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"line"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -414,6 +437,58 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "js/main.js",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 12013,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5399,
+								5399
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 19,
+							"color_helper.color_scheme": "Mariana.sublime-color-scheme",
+							"color_helper.refresh": false,
+							"color_helper.scan":
+							{
+								"allow_scanning": true,
+								"color_class":
+								[
+									{
+										"class": "css-level-4",
+										"scopes": ""
+									}
+								],
+								"color_trigger": "(?xi)\n(?:\n    \\b(?<![-#&$])(?:\n        color\\((?!\\s*-)|(?:hsla?|(?:ok)?(?:lch|lab)|hwb|rgba?)\\(\n) |\n\\b(?<![-#&$])[\\w]{3,}(?![(-])\\b|(?<![&])\\#)\n",
+								"current_ext": ".js",
+								"current_syntax": "JavaScript/JavaScript",
+								"enabled": true,
+								"last_updated": 1781359906.55,
+								"scanning": "string.quoted"
+							},
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2109.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -447,7 +522,7 @@
 			1.0
 		]
 	},
-	"menu_visible": true,
+	"menu_visible": false,
 	"output.Terminus":
 	{
 		"height": 142.0,
@@ -525,7 +600,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 200.0,
+	"side_bar_width": 269.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
