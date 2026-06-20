@@ -29,7 +29,7 @@ export const CTemplates = {
         <ul class="navbar--items">
           {{#each navItem}}
             <li id="{{navbar_li_id}}" class="navbar--item icon-link {{navbar_li_class}}">{{navbar_link_title}}</li>
-          {{#each}}
+          {{/each}}
         </ul>
     </navbar>
     <div class="mask"></div>
@@ -64,9 +64,9 @@ export const NavSlideOut = () => {
         _hamburger.classList.toggle('menu-opened');
     }
 
-    if (_eID === "commit-history") commitHistory(_eID);
+    if (_eID === "resume-id") resumeFileList(_eID);
 
-    async function commitHistory(_id) {
+    async function resumeFileList(_id) {
         console.log("Is there an ID? " + _id);
 
         // 1. Compile the template string into a functional engine

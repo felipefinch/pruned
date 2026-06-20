@@ -8,33 +8,30 @@ const owner = 'felipefinch';
 const repo = 'pruned';
 const resumes_PATH = 'MData/';
 
-// 1. Compile the template string into a functional engine
-// const profileCompiled = Handlebars.compile(CTemplates.sideNavSlideOut);
+// Essential Navigation Rendering at Startup!
+const _loadTemplateString = CTemplates.sideNavSlideOut;
+const profileCompiled = Handlebars.compile(_loadTemplateString);
+const renderedHtml = profileCompiled({
+    navItem: [{
+            navbar_li_id: "resume-id",
+            navbar_li_class: "resume",
+            navbar_link_title: "Resume List"
+        },
+        {
+            navbar_li_id: "commit-id",
+            navbar_li_class: "commit",
+            navbar_link_title: "Commit History"
+        },
+        {
+            navbar_li_id: "raw-id",
+            navbar_li_class: "json",
+            navbar_link_title: "RAW JSON"
+        }
+    ]
+});
 
-// // 2. Inject context data to generate the HTML string
-// const renderedHtml = profileCompiled({
-//     navItem: [{
-//             navbar_li_id: "resume-id",
-//             navbar_li_class: "resume-cls",
-//             navbar_link_title: "Resume List"
-//         },
-//         {
-//             navbar_li_id: "commit-id",
-//             navbar_li_class: "commit-cls",
-//             navbar_link_title: "Commit History"
-//         },
-//         {
-//             navbar_li_id: "raw-id",
-//             navbar_li_class: "raw-class",
-//             navbar_link_title: "RAW JSON"
-//         }
-//     ]
-// });
+document.querySelector('.navigation').innerHTML = renderedHtml;
 
-// 3. Render into the DOM
-// _main.innerHTML = renderedHtml;
-// const _html = await listGithubFolder('afiles');
-// document.getElementById("resumes").querySelector('hr').insertAdjacentHTML("afterend", _html);
 
 // Mousedown (vs Click's)
 addEventListener('mousedown', (event) => {
@@ -47,7 +44,7 @@ addEventListener('mouseup', (event) => {
     event.preventDefault();
     const _eID = event.target.id;
 
-    if (_eID === "commit-history") {
+    if (_eID === "resume-id") {
         document.querySelector(".sliding-navbar").classList.toggle('sliding-navbar--open');
         document.querySelector(".mask").classList.remove('show');
         document.querySelector(".hamburger").classList.toggle('menu-opened');

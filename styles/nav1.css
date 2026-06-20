@@ -179,12 +179,12 @@
 
 }
 
-.history::before {
+.commit::before {
     background-image: url('./imgs/git-commit-256.png');
 }
 .json::before {
     background-image: url('./imgs/git-merge-256.png');
 }
-.branch::before {
+.resume::before {
     background-image: url('./imgs/git-branch-256.png');
 }
