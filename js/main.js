@@ -1,6 +1,6 @@
 import {
     CTemplates,
-    NavSlideOut
+    NavSlideOut, ResumeList
 } from './component_construct.js';
 
 // Common credentials for Github API Access! - Tokens are set to expire after one-day
@@ -32,17 +32,22 @@ const renderedHtml = profileCompiled({
 
 document.querySelector('.navigation').innerHTML = renderedHtml;
 
-
 // Mousedown (vs Click's)
 addEventListener('mousedown', (event) => {
     event.preventDefault();
+    const _eID = event.target.id;
+    const _etarget = event.target.classList;
+
+    // Individual Component Calls & Site Functionality
     NavSlideOut();
+    _eID === "resume-id" ? ResumeList() : null;
 });
 
 // MouseUP (vs Click's)
 addEventListener('mouseup', (event) => {
     event.preventDefault();
     const _eID = event.target.id;
+    const _etarget = event.target.classList;
 
     if (_eID === "resume-id") {
         document.querySelector(".sliding-navbar").classList.toggle('sliding-navbar--open');

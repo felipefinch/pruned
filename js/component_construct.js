@@ -36,12 +36,9 @@ export const CTemplates = {
     `
 };
 
+
 // Hamburger & Slide-Out Functionality ==============================================================
 export const NavSlideOut = () => {
-
-    const _eID = event.target.id;
-    const _etarget = event.target.classList;
-    const _main = document.getElementById("maincontent");
 
     const _hamburger_menu = document.querySelector(".hamburger-menu");
     const _slider = document.querySelector(".sliding-navbar");
@@ -49,7 +46,7 @@ export const NavSlideOut = () => {
     const _hamburger = document.querySelector(".hamburger");
     const _commits = document.getElementById('#commit-history');
 
-    const _burgerArea = _etarget.contains("hamburger") || _etarget.contains("hamburger-menu");
+    const _burgerArea = event.target.classList.contains("hamburger") || event.target.classList.contains("hamburger-menu");
     const _maskTarget = event.target.classList.contains("mask");
 
     if (_burgerArea) {
@@ -63,25 +60,21 @@ export const NavSlideOut = () => {
         _mask.classList.remove('show');
         _hamburger.classList.toggle('menu-opened');
     }
+}
 
-    if (_eID === "resume-id") resumeFileList(_eID);
+export const ResumeList = async () => {
+    const _main = document.getElementById("maincontent");
 
-    async function resumeFileList(_id) {
-        console.log("Is there an ID? " + _id);
+    // 1. Compile the template string into a functional engine
+    const profileCompiled = Handlebars.compile(CTemplates.resumeList);
 
-        // 1. Compile the template string into a functional engine
-        const profileCompiled = Handlebars.compile(CTemplates.resumeList);
+    // 2. Inject context data to generate the HTML string
+    const renderedHtml = profileCompiled({
+        title: "Resume Version List"
+    });
 
-        // 2. Inject context data to generate the HTML string
-        const renderedHtml = profileCompiled({
-            title: "Resume Version List"
-        });
-
-        // 3. Render into the DOM
-        _main.innerHTML = renderedHtml;
-        const _html = await listGithubFolder('afiles');
-        document.getElementById("resumes").querySelector('hr').insertAdjacentHTML("afterend", _html);
-
-    }
-
+    // 3. Render into the DOM
+    _main.innerHTML = renderedHtml;
+    const _html = await listGithubFolder('afiles');
+    document.getElementById("resumes").querySelector('hr').insertAdjacentHTML("afterend", _html);
 }
