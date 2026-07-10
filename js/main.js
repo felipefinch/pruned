@@ -40,7 +40,7 @@ addEventListener('mousedown', (event) => {
 
     // Individual Component Calls & Site Functionality
     NavSlideOut();
-    _eID === "resume-id" ? ResumeList() : null;
+    // _eID === "resume-id" ? ResumeList() : null;
 });
 
 // MouseUP (vs Click's)
